@@ -61,7 +61,7 @@ For an explanation of the function of the ``LD_PRELOAD`` environment variable in
 
 https://www.man7.org/linux/man-pages/man8/ld.so.8.html
 
-This provides alternative versions of several network API functions (``getaddrinfo``, ``bind``,``listen``, ``connect``, ``socket``, ``sendto``, ``sendmsg``). These then make the calls to the "real" API functions, using function pointers to them obtained using the ``dlsym`` function call. For a description of the ``dlsym`` function see for example here:
+This shim provides alternative versions of several network API functions (``getaddrinfo``, ``bind``,``listen``, ``connect``, ``socket``, ``sendto``, ``sendmsg``). These then make the calls to the "real" API functions, using function pointers to them obtained using the ``dlsym`` function call. For a description of the ``dlsym`` function see for example here:
 
 https://man7.org/linux/man-pages/man3/dlsym.3.html
 
