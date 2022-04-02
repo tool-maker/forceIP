@@ -25,7 +25,7 @@ Environment variables (all optional):
   fIP_CONNECTADDR  - IPv4 address to force as source address for calls to "connect", "sendto" and "sendmsg"
   fIP_CONNECTADDR6 - IPv6 address to force as source address for calls to "connect", "sendto" and "sendmsg"
                      connect to destination localhost, 127.0.0.0, ::1 is left alone
-  fIP_DNSSKIP      - do not modify UDP packets with detination port 53 (DNS) (set to anything)
+  fIP_DNSSKIP      - do not modify UDP packets with destination port 53 (DNS) (set to anything)
 
 NOTE:
 
