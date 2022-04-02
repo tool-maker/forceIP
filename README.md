@@ -82,6 +82,4 @@ https://man7.org/linux/man-pages/man2/connect.2.html
 
 https://man7.org/linux/man-pages/man2/socket.2.html
 
-https://man7.org/linux/man-pages/man3/sendto.3p.html
-
-https://man7.org/linux/man-pages/man3/sendmsg.3p.html
+https://man7.org/linux/man-pages/man2/sendto.2.html
