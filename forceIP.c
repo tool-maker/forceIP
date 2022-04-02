@@ -24,6 +24,7 @@ Environment variables (all optional):
   fIP_LISTENLOCAL  - force listen source address for localhost too (set to anything)
   fIP_CONNECTADDR  - IPv4 address to force as source address for calls to "connect", "sendto" and "sendmsg"
   fIP_CONNECTADDR6 - IPv6 address to force as source address for calls to "connect", "sendto" and "sendmsg"
+                     connect to localhost, 127.0.0.0, ::1 is left alone
   fIP_DNSSKIP      - do not modify UDP packets with detination port 53 (DNS) (set to anything)
 
 NOTE:
