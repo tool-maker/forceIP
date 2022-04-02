@@ -57,6 +57,7 @@ Also before starting the network program, set other environment variables ("``ex
                      connect to destination localhost, 127.0.0.0, ::1 is left alone
   fIP_DNSSKIP      - do not modify UDP packets with destination port 53 (DNS) (set to anything)
 ```
+***
 For an explanation of the function of the ``LD_PRELOAD`` environment variable in Linux see the man page for ``ld.so``. For example here:
 
 https://www.man7.org/linux/man-pages/man8/ld.so.8.html
@@ -68,3 +69,13 @@ https://man7.org/linux/man-pages/man3/dlsym.3.html
 The calls to ``dlsym`` are done in a shared library "``constuctor``" function. For an explanation of this see the description of the "``constuctor``" attribute here:
 
 https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Common-Function-Attributes.html#Common-Function-Attributes
+
+For a description of the functions that this shim intercepts see for example here:
+
+https://man7.org/linux/man-pages/man3/getaddrinfo.3.html
+https://man7.org/linux/man-pages/man2/bind.2.html
+https://man7.org/linux/man-pages/man2/listen.2.html
+https://man7.org/linux/man-pages/man2/connect.2.html
+https://man7.org/linux/man-pages/man2/socket.2.html
+https://man7.org/linux/man-pages/man3/sendto.3p.html
+https://man7.org/linux/man-pages/man3/sendmsg.3p.html
