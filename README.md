@@ -1,4 +1,4 @@
-This is an LD_PRELOAD shim for Linux to intercept networking API calls and bind sockets to specified source a address.
+This file ``forceIP.c`` is for an LD_PRELOAD shim for Linux to intercept networking API calls and bind sockets to a specified source address.
 
 It is meant to be used when a VPN is operating but is not the defaut gateway. A scheme for this is described on the wiki page "[Running OpenVPN on Linux without VPN as Default Gateway](https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway)" found here:
 
@@ -35,13 +35,13 @@ ls -la
 popd
 ```
 
-To preload this shim:
+To have this shim preload before a network program starts, set the ``LD_PRELOAD`` environment variable before starting the program:
 
 ```
 export LD_PRELOAD=~/forceIP/forceIP.so
 ```
 
-Then before starting the program set ("``export fIP_?=...``") environment variables:
+Also before starting the program, set otherenvironment variables ("``export fIP_?=...``") as desired:
 
 ```
   fIP_TRACE        - trace all calls (set to anything)
