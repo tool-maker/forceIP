@@ -1,6 +1,6 @@
 The file ``forceIP.c`` is for an ``LD_PRELOAD`` shim for Linux to intercept networking API calls and bind sockets to a specified source address.
 
-For an explanation of the function of the ``LD_PRELAOD`` environment variable in Linux see the man page for ``ld.so``. For example here:
+For an explanation of the function of the ``LD_PRELOAD`` environment variable in Linux see the man page for ``ld.so``. For example here:
 
 https://www.man7.org/linux/man-pages/man8/ld.so.8.html
 
