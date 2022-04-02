@@ -73,9 +73,15 @@ https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Common-Function-Attributes.html#Co
 For a description of the functions that this shim intercepts see for example here:
 
 https://man7.org/linux/man-pages/man3/getaddrinfo.3.html
+
 https://man7.org/linux/man-pages/man2/bind.2.html
+
 https://man7.org/linux/man-pages/man2/listen.2.html
+
 https://man7.org/linux/man-pages/man2/connect.2.html
+
 https://man7.org/linux/man-pages/man2/socket.2.html
+
 https://man7.org/linux/man-pages/man3/sendto.3p.html
+
 https://man7.org/linux/man-pages/man3/sendmsg.3p.html
