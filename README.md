@@ -4,7 +4,7 @@ For an explanation of the function of the ``LD_PRELAOD`` environment variable in
 
 https://www.man7.org/linux/man-pages/man8/ld.so.8.html
 
-It is meant to be used when a VPN is operating but is not the defaut gateway. A scheme for this is described on the wiki page "[Running OpenVPN on Linux without VPN as Default Gateway](https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway)" found here:
+It is meant to be used when a VPN is operating but is not the default gateway. A scheme for this is described on the wiki page "[Running OpenVPN on Linux without VPN as Default Gateway](https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway)" found here:
 
 https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway
 
@@ -59,5 +59,5 @@ Also before starting the network program, set other environment variables ("``ex
   fIP_CONNECTADDR  - IPv4 address to force as source address for calls to "connect", "sendto" and "sendmsg"
   fIP_CONNECTADDR6 - IPv6 address to force as source address for calls to "connect", "sendto" and "sendmsg"
                      connect to destination localhost, 127.0.0.0, ::1 is left alone
-  fIP_DNSSKIP      - do not modify UDP packets with detination port 53 (DNS) (set to anything)
+  fIP_DNSSKIP      - do not modify UDP packets with destination port 53 (DNS) (set to anything)
 ```
