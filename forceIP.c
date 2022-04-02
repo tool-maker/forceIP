@@ -11,20 +11,20 @@ gcc -nostartfiles -fpic -shared forceIP.c -o forceIP.so -ldl
 ls -la
 popd
 
-Environment variables (all optional - prefix with "fIP_"):
+Environment variables (all optional):
 
-  TRACE        - trace all calls (set to anything)
-  BINDADDR     - IPv4 address to force as source address for calls to "bind"
-  BINDADDR6    - IPv6 address to force as source address for calls to "bind"
-                 bind to localhost, 127.0.0.0, ::1 is left alone
-  BINDLOCAL    - force bind source address for localhost too (set to anything)
-  LISTENADDR   - IPv4 address to force as source address for calls to "listen"
-  LISTENADDR6  - IPv6 address to force as source address for calls to "listen"
-                 listen on localhost, 127.0.0.0, ::1 is left alone
-  LISTENLOCAL  - force listen source address for localhost too (set to anything)
-  CONNECTADDR  - IPv4 address to force as source address for calls to "connect", "sendto" and "sendmsg"
-  CONNECTADDR6 - IPv6 address to force as source address for calls to "connect", "sendto" and "sendmsg"
-  DNSSKIP      - do not modify UDP packets with destination port 53 (DNS) (set to anything)
+  fIP_TRACE        - trace all calls (set to anything)
+  fIP_BINDADDR     - IPv4 address to force as source address for calls to "bind"
+  fIP_BINDADDR6    - IPv6 address to force as source address for calls to "bind"
+                     bind to localhost, 127.0.0.0, ::1 is left alone
+  fIP_BINDLOCAL    - force bind source address for localhost too (set to anything)
+  fIP_LISTENADDR   - IPv4 address to force as source address for calls to "listen"
+  fIP_LISTENADDR6  - IPv6 address to force as source address for calls to "listen"
+                     listen on localhost, 127.0.0.0, ::1 is left alone
+  fIP_LISTENLOCAL  - force listen source address for localhost too (set to anything)
+  fIP_CONNECTADDR  - IPv4 address to force as source address for calls to "connect", "sendto" and "sendmsg"
+  fIP_CONNECTADDR6 - IPv6 address to force as source address for calls to "connect", "sendto" and "sendmsg"
+  fIP_DNSSKIP      - do not modify UDP packets with detination port 53 (DNS) (set to anything)
 
 NOTE:
 
