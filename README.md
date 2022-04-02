@@ -45,7 +45,7 @@ To have this shim preload before a network program starts, set the ``LD_PRELOAD`
 export LD_PRELOAD=~/forceIP/forceIP.so
 ```
 
-Also before starting the program, set otherenvironment variables ("``export fIP_?=...``") as desired:
+Also before starting the network program, set other environment variables ("``export fIP_?=...``") as desired:
 
 ```
   fIP_TRACE        - trace all calls (set to anything)
