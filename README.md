@@ -83,3 +83,5 @@ https://man7.org/linux/man-pages/man2/connect.2.html
 https://man7.org/linux/man-pages/man2/socket.2.html
 
 https://man7.org/linux/man-pages/man2/sendto.2.html
+
+https://man7.org/linux/man-pages/man2/sendmsg.2.html
