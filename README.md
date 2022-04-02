@@ -1,9 +1,5 @@
 The file ``forceIP.c`` is for an ``LD_PRELOAD`` shim for Linux to intercept networking API calls and bind sockets to a specified source address.
 
-For an explanation of the function of the ``LD_PRELOAD`` environment variable in Linux see the man page for ``ld.so``. For example here:
-
-https://www.man7.org/linux/man-pages/man8/ld.so.8.html
-
 It is meant to be used when a VPN is operating but is not the default gateway. A scheme for this is described on the wiki page "[Running OpenVPN on Linux without VPN as Default Gateway](https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway)" found here:
 
 https://github.com/tool-maker/VPN_just_for_torrents/wiki/Running-OpenVPN-on-Linux-without-VPN-as-Default-Gateway
@@ -61,3 +57,14 @@ Also before starting the network program, set other environment variables ("``ex
                      connect to destination localhost, 127.0.0.0, ::1 is left alone
   fIP_DNSSKIP      - do not modify UDP packets with destination port 53 (DNS) (set to anything)
 ```
+For an explanation of the function of the ``LD_PRELOAD`` environment variable in Linux see the man page for ``ld.so``. For example here:
+
+https://www.man7.org/linux/man-pages/man8/ld.so.8.html
+
+This provides alternative versions of several network API functions (``getaddrinfo``, ``bind``,``listen``, ``connect``, ``socket``, ``sendto``, ``sendmsg``). These then make the calls to the "real" API functions, using function pointers to them obtained using the ``dlsym`` function call. For a description of the ``dlsym`` function see for example here:
+
+https://man7.org/linux/man-pages/man3/dlsym.3.html
+
+The calls to ``dlsym`` are done in a shared library "``constuctor``" function. For an explanation of this see the description of the "``constuctor``" attribute here:
+
+https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Common-Function-Attributes.html#Common-Function-Attributes
