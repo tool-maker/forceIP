@@ -27,8 +27,7 @@ sudo apt-get install gcc
 # create target folder and upload source
 mkdir ~/forceIP
 pushd ~/forceIP
-rm forceIP.c
-wget https://raw.githubusercontent.com/tool-maker/forceIP/main/forceIP.c
+curl https://raw.githubusercontent.com/tool-maker/forceIP/main/forceIP.c > forceIP.c
 ls -la
 
 # compile it
