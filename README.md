@@ -85,3 +85,11 @@ https://man7.org/linux/man-pages/man2/socket.2.html
 https://man7.org/linux/man-pages/man2/sendto.2.html
 
 https://man7.org/linux/man-pages/man2/sendmsg.2.html
+
+For an overview of IP, UDP and TCP programming in Linux see for example here:
+
+https://man7.org/linux/man-pages/man7/ip.7.html
+
+https://man7.org/linux/man-pages/man7/udp.7.html
+
+https://man7.org/linux/man-pages/man7/tcp.7.html
