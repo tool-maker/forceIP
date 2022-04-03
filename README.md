@@ -66,7 +66,7 @@ This shim provides alternative versions of several network API functions (``geta
 
 https://man7.org/linux/man-pages/man3/dlsym.3.html
 
-The calls to ``dlsym`` are done in a shared library "``constuctor``" function. For an explanation of this see the description of the "``constuctor``" attribute here:
+The calls to ``dlsym`` are done in a shared library "``constructor``" function. For an explanation of this see the description of the "``constructor``" attribute here:
 
 https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Common-Function-Attributes.html#Common-Function-Attributes
 
