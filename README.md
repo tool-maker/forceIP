@@ -97,3 +97,17 @@ https://man7.org/linux/man-pages/man7/socket.7.html
 https://man7.org/linux/man-pages/man7/udp.7.html
 
 https://man7.org/linux/man-pages/man7/tcp.7.html
+
+It is not immediately obvious which network function calls need to be intercepted, other than ``bind``. But this information from the ``ip.7`` man page above provides some insight:
+
+> An ephemeral port is allocated to a socket in the following circumstances:
+>
+>    *  the port number in a socket address is specified as 0 when calling bind(2);
+>
+>    *  listen(2) is called on a stream socket that was not previously bound;
+>
+>    *  connect(2) was called on a socket that was not previously bound;
+>
+>    *  sendto(2) is called on a datagram socket that was not previously bound.
+
+This implies that functions other than ``bind``, ``listen``, ``connect`` and ``sendto`` do not need to be intercepted.
